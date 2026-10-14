@@ -1,0 +1,1 @@
+Git helps developers track changes in their projects.
