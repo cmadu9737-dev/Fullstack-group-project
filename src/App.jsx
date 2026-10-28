@@ -1,15 +1,13 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
+import HowItWorks from "./assets/Testimonial/HowItWorks"
+import Testimonials from './assets/Testimonial/Testimonials'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-      
+      <HowItWorks />
+      <Testimonials />
     </div>
   )
 }
