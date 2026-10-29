@@ -1,0 +1,170 @@
+:root {
+  --sh-primary: #0756d9;
+  --sh-navy: #101828;
+  --sh-light: #eaf2ff;
+  --sh-muted: #667085;
+}
+
+.site-footer {
+  background: #fff;
+  border-top: 1px solid #e4e7ec;
+  padding: 32px 16px 16px;
+  font-family: "Inter", system-ui, sans-serif;
+  color: var(--sh-navy);
+  
+}
+
+.site-footer__main {
+  max-width: 99%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr 1.5fr;
+  gap: 28px;
+  padding-bottom: 24px;
+}
+
+/* ---------- Brand ---------- */
+.site-footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--sh-primary);
+}
+
+.site-footer__brand p {
+  margin: 8px 0 14px;
+  font-size: 0.8rem;
+  color: var(--sh-muted);
+  max-width: 200px;
+  line-height: 1.4;
+}
+
+.site-footer__socials {
+  display: flex;
+  gap: 8px;
+}
+
+.site-footer__socials a {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--sh-navy);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.site-footer__socials a:hover {
+  background: var(--sh-primary);
+  transform: translateY(-2px);
+}
+
+/* ---------- Link columns ---------- */
+.site-footer__col h4 {
+  margin: 0 0 12px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.site-footer__col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.site-footer__col a {
+  font-size: 0.82rem;
+  color: var(--sh-muted);
+  text-decoration: none;
+}
+
+.site-footer__col a:hover {
+  color: var(--sh-primary);
+  text-decoration: underline;
+}
+
+/* ---------- Trust & Safety ---------- */
+.site-footer__trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.trust-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 0.72rem;
+  line-height: 1.2;
+  background: #fff;
+}
+
+.trust-badge svg {
+  color: var(--sh-primary);
+  flex-shrink: 0;
+}
+
+/* ---------- Bottom bar ---------- */
+.site-footer__bottom {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  border-top: 1px solid #e4e7ec;
+  padding-top: 14px;
+  font-size: 0.78rem;
+  color: var(--sh-muted);
+}
+
+.site-footer__bottom p {
+  margin: 0;
+}
+
+.site-footer__legal a {
+  color: var(--sh-muted);
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.site-footer__legal a:hover {
+  color: var(--sh-primary);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .site-footer__main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .site-footer__brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 560px) {
+  .site-footer__main {
+    grid-template-columns: 1fr;
+  }
+
+  .site-footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-footer__legal a {
+    margin: 0 16px 0 0;
+  }
+}
