@@ -120,7 +120,7 @@ function ServiceCard({ service }) {
     const message = `Hello, I am interested in ${service.title} offered by ${service.provider}. Please provide more information.`;
 
     if (!service.phone) {
-      alert("Please provide the service provider's phone number.");
+      alert("Please provide the service provider's phone number..");
       return;
     }
 
