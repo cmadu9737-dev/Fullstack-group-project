@@ -1,24 +1,15 @@
-import React from 'react'
-import"./App.css";
-import AppBanner from "./Components/AppBannner/AppBanner.jsx"
-import Footer from "./Components/Footer/Footer.jsx";
+import { useState } from 'react'
+import './App.css'
+import HowItWorks from "./assets/Testimonial/HowItWorks"
+import Testimonials from './assets/Testimonial/Testimonials'
 
-
-
-const App = () => {
+function App() {
   return (
-    <div>
-      <AppBanner/>
-      <Footer />
-
-
-
-    
-
-     
-
+    <div className="App">
+      <HowItWorks />
+      <Testimonials />
     </div>
   )
 }
 
-export default App;
+export default App
