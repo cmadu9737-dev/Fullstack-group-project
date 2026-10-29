@@ -1,0 +1,141 @@
+.how-it-works {
+  width: 100%;
+  padding: 60px 5%;
+  background: #ffffff;
+  color: #101828;
+}
+
+.how-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.how-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.how-heading h2 {
+  color: #101828;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.how-heading p {
+  color: #667085;
+  font-size: 16px;
+  margin: 0;
+}
+
+.how-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.how-card {
+  flex: 1;
+  min-width: 0;
+  padding: 25px;
+  background: #ffffff;
+  border: 1px solid #dce3ed;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(16, 24, 40, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.how-card:hover {
+  transform: translateY(-5px);
+}
+
+.how-card-top {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #0756d9;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.step-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #eaf2ff;
+  color: #0756d9;
+}
+
+.how-card h3 {
+  color: #101828;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.how-card p {
+  color: #344054;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.step-arrow {
+  color: #0756d9;
+  font-size: 28px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .how-steps {
+    gap: 12px;
+  }
+
+  .how-card {
+    padding: 18px;
+  }
+
+  .step-arrow {
+    font-size: 22px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+  .how-it-works {
+    padding: 45px 5%;
+  }
+
+  .how-heading h2 {
+    font-size: 27px;
+  }
+
+  .how-steps {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .how-card {
+    width: 100%;
+    padding: 22px;
+  }
+
+  .step-arrow {
+    display: none;
+  }
+}
