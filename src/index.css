@@ -1,0 +1,27 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  display: block;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

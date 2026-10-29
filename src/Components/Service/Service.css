@@ -1,15 +1,176 @@
-*{
+
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-.Services{
-    margin-top: 15px;
-    padding: 10px;
+
+/* =========================
+   MAIN SERVICES SECTION
+========================= */
+.services-section {
+    display: block;
+    width: 100%;
+    clear: both;
+    padding-bottom: 40px;
+    background-color: #f5f8ff;
+}
+
+/* =========================
+   SERVICES HEADING
+========================= */
+.services-heading {
+    width: 100%;
+    padding: 50px 20px 20px;
+    text-align: center;
+}
+
+.services-heading h2 {
+    margin-bottom: 12px;
+    color: #0c1945;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.services-heading p {
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* =========================
+   SERVICES GRID
+========================= */
+.Services {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+
+    width: 100%;
+    padding: 25px 7%;
+}
+
+/* =========================
+   INDIVIDUAL SERVICE CARDS
+========================= */
+.service-card {
     display: flex;
-    border: 100%;
-    border-color: black;
-    color: blue;
-    background-color: aliceblue;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    min-width: 0;
+    min-height: 250px;
+    padding: 30px 22px;
+
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #e5eaf5;
+    border-radius: 16px;
+
+    box-shadow: 0 4px 15px rgba(12, 25, 69, 0.05);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
 }
 
+/* =========================
+   CARD HOVER EFFECT
+========================= */
+.service-card:hover {
+    transform: translateY(-6px);
+    border-color: #2563eb;
+    box-shadow: 0 12px 28px rgba(12, 25, 69, 0.12);
+}
 
+/* =========================
+   SERVICE ICONS
+========================= */
+.service-card svg {
+    width: 58px;
+    height: 58px;
+    padding: 12px;
+
+    flex-shrink: 0;
+    color: #2563eb;
+    background-color: #edf4ff;
+    border-radius: 14px;
+
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover svg {
+    transform: scale(1.08);
+}
+
+/* =========================
+   CARD HEADINGS
+========================= */
+.service-card h4 {
+    color: #0c1945;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+/* =========================
+   CARD DESCRIPTIONS
+========================= */
+.service-card p {
+    max-width: 280px;
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* =========================
+   TABLETS
+========================= */
+@media (max-width: 900px) {
+    .Services {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+        padding: 25px 5%;
+    }
+
+    .service-card {
+        min-height: 230px;
+    }
+}
+
+/* =========================
+   MOBILE PHONES
+========================= */
+@media (max-width: 520px) {
+    .services-heading {
+        padding: 35px 20px 15px;
+    }
+
+    .services-heading h2 {
+        font-size: 26px;
+    }
+
+    .services-heading p {
+        font-size: 14px;
+    }
+
+    .Services {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 20px;
+    }
+
+    .service-card {
+        min-height: 210px;
+        padding: 25px 18px;
+    }
+
+    .service-card h4 {
+        font-size: 17px;
+    }
+}
