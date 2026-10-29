@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Services{
+    margin-top: 15px;
+    padding: 10px;
+    display: flex;
+    border: 100%;
+    border-color: black;
+    color: blue;
+    background-color: aliceblue;
+}
+
+
