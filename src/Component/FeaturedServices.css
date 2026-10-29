@@ -103,12 +103,10 @@
   Min-width: 0;
   Padding: 10px;
   Box-sizing: border-box;
-
   Background: #ffffff;
   Border: 1px solid #e2edf5;
   Border-radius: 17px;
   Box-shadow: 0 3px 12px rgba(28, 77, 112, 0.08);
-
   Transition:
     Transform 0.25s ease,
     Box-shadow 0.25s ease;

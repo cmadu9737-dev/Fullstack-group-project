@@ -24,7 +24,7 @@ const services = [
     reviews: 96,
     price: "₦150,000",
     location: "Ikeja, Lagos",
-    phone: "2348012345678",
+    phone: "2348104072213",
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const services = [
     reviews: 114,
     price: "₦75,000",
     location: "Lekki, Lagos",
-    phone: "2348012345678",
+    phone: "2348104072213",
   },
    {
     id: 3,
@@ -48,21 +48,21 @@ const services = [
     reviews: 114,
     price: "₦75,000",
     location: "Lekki, Lagos",
-    phone: "2348012345678",
+    phone: "2348104072213",
   },
-   {
-    id: 3,
-    title: "Catering Services",
-    provider: "Delight Catering",
+  {
+    id: 2,
+    title: "Event Planning & Decoration",
+    provider: "Elegant Events",
     image:
-      "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=900&q=80",
-    rating: 4.9,
-    reviews: 114,
-    price: "₦75,000",
-    location: "Lekki, Lagos",
-    phone: "2348012345678",
+      "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=900&q=80",
+    rating: 4.8,
+    reviews: 96,
+    price: "₦150,000",
+    location: "Ikeja, Lagos",
+    phone: "2348104072213",
   },
-    {
+  {
     id: 1,
     title: "Professional Photography",
     provider: "Creative Lens Studio",
