@@ -1,0 +1,86 @@
+:root {
+  --sh-primary: #0756d9;
+  --sh-navy: #101828;
+  --sh-light: #eaf2ff;
+  --sh-muted: #667085;
+}
+
+.app-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  background: var(--sh-light);
+  border-radius: 12px;
+  padding: 14px 20px;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.app-bar__info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.app-bar__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--sh-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.app-bar__info h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--sh-navy);
+}
+
+.app-bar__info p {
+  margin: 2px 0 0;
+  font-size: 0.85rem;
+  color: var(--sh-muted);
+}
+
+.app-bar__actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.app-bar__actions a {
+  transition: transform 0.15s ease;
+}
+
+.app-bar__actions a:hover {
+  transform: translateY(-2px);
+}
+
+.app-bar__actions img {
+  height: 40px;
+  display: block;
+}
+
+.app-bar__qr {
+  width: 48px;
+  height: 48px !important;
+  background: #fff;
+  padding: 3px;
+  border-radius: 6px;
+}
+
+@media (max-width: 560px) {
+  .app-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .app-bar__actions {
+    flex-wrap: wrap;
+  }
+}
